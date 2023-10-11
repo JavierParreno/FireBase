@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "311635699931",
+    "project_id": "cursoandroid-17093",
+    "storage_bucket": "cursoandroid-17093.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311635699931:android:c928bcc6d48588557e44fe",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoWTQ315YVDndWPso8ZbJ3A37iofV-Qxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

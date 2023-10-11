@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/llPrincipal"
+        android:layout_margin="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- * REGISTRO * -"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/etRegisUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:text="Usuario" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/etRegisCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:text="Correo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBoton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etRegisPss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- * REGISTRATE * -" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
