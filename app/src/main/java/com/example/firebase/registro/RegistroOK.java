@@ -1,10 +1,12 @@
-package com.example.firebase;
+package com.example.firebase.registro;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class registroOK extends AppCompatActivity {
+import com.example.firebase.R;
+
+public class RegistroOK extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
