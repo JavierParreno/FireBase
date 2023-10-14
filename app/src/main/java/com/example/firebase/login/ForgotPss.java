@@ -29,12 +29,15 @@ public class ForgotPss extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_pss);
 
-
         mAuth = FirebaseAuth.getInstance();
 
         etCorreoRecor = findViewById(R.id.etCorreoRecor);
         btnRecovery = findViewById(R.id.btnRecupera);
 
+
+        //////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+        ////////////////////////////// Boton Recovery \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         btnRecovery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,11 +57,7 @@ public class ForgotPss extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
+        //////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
     }
 }

@@ -13,7 +13,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-
         android:orientation="vertical">
 
         <LinearLayout
@@ -78,18 +77,6 @@
                 android:text="Si has olvidado la contraseña pincha aquí" />
         </LinearLayout>
 
-
-
-
-
-
-
-
-
-
-
     </LinearLayout>
-
-
 
 </RelativeLayout>
