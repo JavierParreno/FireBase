@@ -7,29 +7,30 @@
     tools:context=".login.Login">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/llLogin"
-        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
         android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/llLoginUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:layout_marginTop="150dp">
+            android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/etLoginUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
+                android:hint="Usuario"
                 android:inputType="text"
-                android:hint="Usuario"/>
-
+                android:textAlignment="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -43,15 +44,15 @@
                 android:id="@+id/etLoginPss"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
+                android:hint="Contraseña"
                 android:inputType="text"
-                android:hint="Contraseña"/>
-
+                android:textAlignment="center" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/llBoton"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -60,9 +61,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="- * LOGEATE * -" />
-
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llForgotPss"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvForgotPss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si has olvidado la contraseña pincha aquí" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
     </LinearLayout>
+
+
 
 </RelativeLayout>

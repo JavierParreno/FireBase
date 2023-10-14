@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.firebase.R;
@@ -26,8 +27,9 @@ public class Login extends AppCompatActivity {
     private DatabaseReference mRef;
     private FirebaseUser fbUser;
     private EditText etLoginUser, etLoginPss;
+    private TextView tvForgotPss;
     private Button btnLogin;
-    private String loginCorreo, loginPss;
+    private String loginCorreo, loginPss, RecoveryPss;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class Login extends AppCompatActivity {
 
         etLoginUser = findViewById(R.id.etLoginUser);
         etLoginPss = findViewById(R.id.etLoginPss);
+        tvForgotPss = findViewById(R.id.tvForgotPss);
 
         btnLogin = findViewById(R.id.btnLogin);
 
@@ -62,5 +65,19 @@ public class Login extends AppCompatActivity {
                 });
             }
         });
+
+        ////////////////////////////// Botón Recorvery Login \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        tvForgotPss.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Login.this, ForgotPss.class);
+                startActivity(i);
+
+            }
+        });
+
+
+
+
     }
 }
